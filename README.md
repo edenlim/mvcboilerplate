@@ -1,5 +1,3 @@
-# mvcboilerplate
-
 TIPS
 -------
 - Name your controllers and models as the same name as your table! ( model/tableName.js OR controller/tableName.js )

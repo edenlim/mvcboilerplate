@@ -1,0 +1,21 @@
+{
+  "name": "mvc-boilerplate",
+  "version": "1.0.0",
+  "description": "TIPS ------- - Name your controllers and models as the same name as your table! ( model/tableName.js OR controller/tableName.js ) - Have a subfolder for your jsx files in views. Name the subfoler as the same name as your table! ( views/tableName/homepage.jsx )",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "express-react-views": "^0.11.0",
+    "method-override": "^3.0.0",
+    "pg": "^7.12.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "url": "^0.11.0"
+  }
+}
