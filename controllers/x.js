@@ -25,7 +25,8 @@ module.exports = (db) => {
     };
 
     let nameCC = (request, response) => {
-        db.x.getName((error, allResult) => {
+        //To pass in argument, just add on inside the bracket. Keep in mind to edit the models too.
+        db.x.getName(argument1,(error, allResult) => {
             response.render('x/name.jsx', { allResult });
         });
     };

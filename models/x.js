@@ -32,9 +32,11 @@ module.exports = (dbPoolInstance) => {
         });
     };
 
-    let getName = (callback) => {
-        let query = 'SELECT name FROM x';
-        dbPoolInstance.query(query, (error, queryResult) => {
+    //To pass in argument, just add on inside the bracket. Keep in mind to edit the controller too
+    let getName = (argument1,callback) => {
+        let queryArr = [argument1];
+        let query = 'SELECT name FROM x WHERE id = $1';
+        dbPoolInstance.query(query, queryArr, (error, queryResult) => {
             if (error) {
                 callback(error, null);
             } else {
