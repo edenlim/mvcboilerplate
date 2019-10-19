@@ -4,6 +4,8 @@
 // 1 - Declaring functions that decides the appropriate response. (Render/redirect/send). If jsx file is rendered, call jsx files.
 // 2 - Stores your function as an object (to be used later)
 // 3 - Returns responses functions as object to be executed when URL is entered
+const sha256 = require('js-sha256');
+let SALT = 'tweedr';
 
 module.exports = (db) => {
     // let whateverCC = whateverControllerCallback (Acronym)

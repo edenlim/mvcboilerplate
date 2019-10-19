@@ -15,6 +15,9 @@ TL;DR
    express-react-views
    react
    react-dom
+   js-sha256
+   
+npm install pg url express  method-override cookie-parser express-react-views react react-dom js-sha256
 
 Flow chart:
 - Nodemon index.js > db.js > models/x.js > db.js > index.js > routes.js > controller/x.js > responses such as render('views/x/name.jsx')
