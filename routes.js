@@ -6,14 +6,15 @@
 
 
 module.exports = (app, allModels) => {
+    // const xCC = xControllerCallback (Acronym)
     /* ===================================================
      * =========         1. CONSTANT          ============
     =================================================== */
-    const xControllerCallbacks = require('./controllers/x.js')(allModels);
+    const xCC = require('./controllers/x.js')(allModels);
 
     /* ===================================================
      * ===========       2. ROUTES          ==============
     =================================================== */
-    app.get('/pokemons', pokemonControllerCallbacks.index);
-    app.get('/students', pokemonControllerCallbacks.students)
+    // app.get('/pokemons', xCC.index);
+    // app.get('/students', xCC.students)
 };
